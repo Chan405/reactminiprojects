@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+height: 100%;
+width: 100%;
+max-zoom: 100%;
+}
+
+.verify-container{
+  margin: 0 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.display {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  position: relative;
+}
+.display:last-child {
+  border-right: none;
+}
+
+.wrap {
+  width: 360px;
+  /*margin: auto;*/
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  display: flex;
+}
+
+.secondpage-input{
+  width: 60px;
+  border: none;
+  font-size: 32px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.secondpage-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shadows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 0 4px rgba(58, 151, 212, 0.28);
+}
+
+/*_______________*/
+

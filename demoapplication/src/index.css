@@ -1,0 +1,175 @@
+
+*{
+  box-sizing: border-box;
+}
+:root{
+  --primary-color: #A200FF;
+}
+
+body {
+  font-family:  sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: var(--primary-color);
+  text-align: center;
+}
+
+#root{
+  width: 60%;
+}
+
+.form1{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+
+.form1 label{
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.form1 .input-email{
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  padding-left: 20px;
+}
+.error-message{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  color: red;
+  font-size: 14px;
+}
+
+.form1 .input-email:focus{
+  outline: 1px solid var(--primary-color);
+}
+
+.btn{
+  height: 48px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+.btn:hover{
+  background: linear-gradient(to bottom right, #A200FF, #1349AA);
+}
+
+
+.verify-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.display {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  position: relative;
+}
+.display:last-child {
+  border-right: none;
+}
+
+.wrap {
+  width: 360px;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  display: flex;
+}
+.secondpage-input{
+  width: 60px;
+  border: none;
+  font-size: 32px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.secondpage-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shadows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 0 4px rgba(58, 151, 212, 0.28);
+}
+
+.verify.btn{
+  width: 100%;
+  margin: 30px auto;
+}
+
+/*_________________________*/
+
+.keyboard{
+  width: 100%;
+  background-color: gray;
+  padding: 20px 0;
+  display: none;
+}
+
+.keyboard.show{
+  display: block;
+  animation: keyboardani 1s;
+}
+@keyframes keyboardani{
+  from{
+    transform: translateY(600px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+.keyboard button{
+  font-size: 30px;
+  padding: 10px 26px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.keyboard button:hover{
+  border: 1px solid #555;
+}
+
+.keyboard-row{
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

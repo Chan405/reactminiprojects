@@ -1,0 +1,52 @@
+*{
+  font-family: sans-serif;
+  font-size: 23px;
+  color: white;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px black;
+}
+
+.monitor .output{
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+.calculator{
+  width: 350px;
+  margin: auto;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.keyboard{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(36, 36, 36);
+}
+
+.keyboard-row{
+  display: flex;
+  gap: 15px;
+}
+
+.one-block{
+  width: 25%;
+  aspect-ratio: 1/1;
+}
+.two-block{
+  width: calc(50% - 15px);
+  aspect-ratio: 2/1;
+}
+.red{
+  color:red;
+}

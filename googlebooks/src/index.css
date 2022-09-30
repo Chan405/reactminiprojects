@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+:root{
+  --primary-color: pink;
+  --secondary-color: steelblue;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+.header{
+  width: 100%;
+  height: 500px;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.row2{
+  position: absolute;
+  right: 150px;
+  top: 10px;
+  text-align: center;
+}
+
+.row2 h2{
+  font-size: 30px;
+  margin: 20px 0;
+}
+.row2 img{
+  width: 250px;
+  margin-top: 20px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search input{
+  outline: none;
+  border: none;
+  width: 350px;
+  height: 35px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.search button{
+  outline: none;
+  border: none;
+  background: none;
+  height: 35px;
+  position: absolute;
+  right: 10px;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-gap: 15px;
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #ffe6e6;
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*.card .bottom{
+  display: flex;
+  flex-direction: column;
+}*/
+.bottom .title{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.bottom .amount{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/*https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=AIzaSyA--VT59FYtQ5irUqLHoB1BXiKaU8xjH9k*/
+
+.overlay{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-inner{
+    background: white;
+    width: 700px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+.overlay-inner .close{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+}
+.overlay-inner .inner-box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.overlay-inner .inner-box img{
+    margin-right: 20px;
+    width: 150px;
+    height: 200px;
+}
+.overlay-inner .inner-box h3{
+    margin-top: 10px;
+    color: green;
+}
+.overlay-inner .inner-box h4{
+    color: blue;
+}
+.overlay-inner .inner-box button{
+    outline: none;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #24a0ed;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+}
+.overlay-inner .description{
+    margin-top: 2rem;
+    text-align: justify;
+    font-size: 13px;
+}
