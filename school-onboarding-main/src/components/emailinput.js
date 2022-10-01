@@ -15,9 +15,12 @@ const schema= yup.object().shape({
 
 export default function EmailInput (props) {
 
-    const {register, handleSubmit, formState: { errors }} = useForm({
+    const {register, handleSubmit, watch, formState: { errors }} = useForm({
         resolver: yupResolver(schema)
     }); 
+
+    const email = watch('email');
+    const isValid = email;
 
     const classes = useStyles();
     const navigate = useNavigate();
@@ -25,6 +28,7 @@ export default function EmailInput (props) {
     const submitForm = (data, e) => {
         e.preventDefault();
         console.log(data);
+
         navigate("/verification");
     }
     
@@ -34,6 +38,8 @@ export default function EmailInput (props) {
         domain: '',
         schoolName: '',
     });
+
+
     const onChange = e => {
         setFormData({
             ...formData,
@@ -65,18 +71,23 @@ export default function EmailInput (props) {
                                 <label>Email</label>
                                 <input
                                     className={classes.input}
-                                    type="text"
+                                    type="email"
                                     name="schoolName"
                                     autoComplete="off"
                                     placeholder="Enter Your Email"
                                     onChange={onChange}
-                                    {...register("email", { required: "Required", })}
+                                    {...register("email", 
+                                    { required: "Required", })}
                                 />
-                                
+                                <small> *Required </small>
                             </div>
                            
                             <div className={classes.btnWraper}>
-                                <Button className={classes.btn} type="submit">
+                                <Button 
+                                className={`${!isValid} ? ${classes.emailinputbtn} : ${classes.btn}`} 
+                                type="submit"
+                                disabled={!isValid}
+                                >
                                     Continue
                                 </Button>
                             </div>

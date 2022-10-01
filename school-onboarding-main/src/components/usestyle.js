@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     gr1: {
         textAlign: 'center',
         margin: 'auto',
-        marginTop: '6rem',
+        marginTop: '40px',
         width: '60%',
     },
     textWraper: {
@@ -120,7 +120,7 @@ const useStyles = makeStyles(theme => ({
         background:
             'linear-gradient(90deg, #A135FB 0%, #3C50E0 100%) 0% 0% no-repeat padding-box',
         width: '327px',
-        height: '63px',
+        height: '60px',
         borderRadius: '5px',
         fontSize: '20px',
         textTransform: 'capitalize',
@@ -128,6 +128,21 @@ const useStyles = makeStyles(theme => ({
         fontWeight: '300',
         marginTop: '5px',
     },
+
+    emailinputbtn: {
+        background:
+            'linear-gradient(90deg, #A135FB 0%, #3C50E0 100%) 0% 0% no-repeat padding-box',
+        width: '327px',
+        height: '60px',
+        borderRadius: '5px',
+        fontSize: '20px',
+        textTransform: 'capitalize',
+        color: '#fff',
+        fontWeight: '300',
+        marginTop: '5px',
+        opacity: '0.8'
+    },
+
     fwbtn: {
         background:
             'linear-gradient(90deg, #A135FB 0%, #3C50E0 100%) 0% 0% no-repeat padding-box',
@@ -187,7 +202,7 @@ const useStyles = makeStyles(theme => ({
     domainplaceholder: {
         position: 'absolute',
         fontSize: 14,
-        top: '32px',
+        top: '47px',
         right: '25px',
         color: '#6D6D93',
     },
@@ -238,7 +253,7 @@ const useStyles = makeStyles(theme => ({
     },
 
     numkeys: {
-        fontSize: '30px',
+        fontSize: '28px',
         padding: '12px 26px',
         margin: '5px',
         borderRadius: '5px',

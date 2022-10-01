@@ -15,8 +15,8 @@ const Firstpage = () => {
 		i18n.changeLanguage(lang);
 	}
 	
-	const {register, handleSubmit, formState: { errors }} = useForm({
-		resolver: yupResolver(schema)
+	const {register, handleSubmit, watch, formState: { errors }} = useForm({
+		resolver: yupResolver(schema),
 	}); 
 
 	const navigate = useNavigate();
@@ -58,7 +58,8 @@ const Firstpage = () => {
 				<p className="error-message"> {errors.email?.message} </p>
 				<button  
 					type="submit" 
-					className="btn"		
+					className="btn"	
+					disabled	
 				> Continue </button>
 			</form>
 		</>

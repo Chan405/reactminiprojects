@@ -15,6 +15,7 @@ font-family: 'Poppins', sans-serif;
 height: 100%;
 width: 100%;
 max-zoom: 100%;
+overflow: hidden;
 }
 
 .verify-container{
